@@ -1,0 +1,29 @@
+<mapper namespace="com.decamincow.dao.IUserDao">
+
+    <select id="findAll" resultType="com.decamincow.po.User" >
+        SELECT * FROM user
+    </select>
+
+
+    <select id="findByCondition" resultType="com.decamincow.po.User" paramterType="com.decamincow.po.User">
+        SELECT * FROM user
+         WHERE id = #{id}
+           AND username = #{username}
+    </select>
+
+    <select id="create" resultType="Integer" paramterType="com.decamincow.po.User">
+        INSERT INTO user (id, username) VALUES (#{id}, #{username})
+    </select>
+
+    <select id="delete" resultType="Integer" paramterType="com.decamincow.po.User">
+        DELETE FROM user WHERE id = #{id}
+    </select>
+
+    <select id="update" resultType="Integer" paramterType="com.decamincow.po.User">
+        UPDATE user
+           SET username = #{username}
+         WHERE id = #{id}
+    </select>
+
+
+</mapper>
