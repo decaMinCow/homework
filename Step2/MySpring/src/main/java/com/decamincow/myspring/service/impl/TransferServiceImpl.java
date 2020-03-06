@@ -5,7 +5,6 @@ import com.decamincow.myspring.annotation.MyService;
 import com.decamincow.myspring.annotation.MyTransactional;
 import com.decamincow.myspring.dao.AccountDao;
 import com.decamincow.myspring.po.Account;
-import com.decamincow.myspring.service.TransferService;
 import com.decamincow.myspring.utils.TransactionManager;
 import lombok.Data;
 
@@ -13,9 +12,9 @@ import lombok.Data;
  * @author 应癫
  */
 @Data
-@MyService
-//@MyService("123")
-public class TransferServiceImpl implements TransferService {
+//@MyService
+@MyService("transferService")
+public class TransferServiceImpl {
 
     @MyAutowired
     private AccountDao accountDao;
@@ -24,7 +23,6 @@ public class TransferServiceImpl implements TransferService {
     private TransactionManager transactionManager;
 
     @MyTransactional
-    @Override
     public void transfer(int fromCardNo, int toCardNo, int money) throws Exception {
 
         Account from = accountDao.searchAccountByCardNo(fromCardNo);
