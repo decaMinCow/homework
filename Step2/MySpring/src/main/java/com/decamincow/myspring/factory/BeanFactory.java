@@ -5,7 +5,6 @@ import com.decamincow.myspring.utils.ClassUtil;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -31,7 +30,7 @@ public class BeanFactory {
             classes.forEach(classInfo -> {
                 // TODO 以后再优化，先实现
                 Annotation service = classInfo.getAnnotation(MyService.class);
-                Annotation dao = classInfo.getAnnotation(MyDao.class);
+                Annotation repository = classInfo.getAnnotation(MyRepository.class);
                 Annotation component = classInfo.getAnnotation(MyComponent.class);
 
                 // 判断注解类型
@@ -55,9 +54,9 @@ public class BeanFactory {
                 }
 
                 // 判断注解类型
-                if (dao instanceof MyDao){
+                if (repository instanceof MyRepository){
                     String beanID;
-                    String annoValue = ((MyDao) dao).value();
+                    String annoValue = ((MyRepository) repository).value();
                     Object o = null;  // 实例化之后的对象
                     // 判断注解值
                     if(!annoValue.isBlank()){
@@ -103,8 +102,6 @@ public class BeanFactory {
                 Class<? extends Object> classInfo = bean.getClass();
                 // 用来判断属性
                 Field[] declaredFields = classInfo.getDeclaredFields();
-                // 用来判断函数
-                Method[] methods = classInfo.getMethods();
 
                 // 判断当前类属性是否存在注解
                 Arrays.stream(declaredFields).forEach(field -> {

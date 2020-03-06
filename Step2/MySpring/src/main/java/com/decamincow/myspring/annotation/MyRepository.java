@@ -1,11 +1,9 @@
 package com.decamincow.myspring.annotation;
 
-import org.springframework.stereotype.Component;
-
 import java.lang.annotation.*;
 
 /**
- * @ClassName MyDao
+ * @ClassName MyRepository
  * @Description TODO
  * @Author decamincow
  * @Date 06/03/2020 1:16 PM
@@ -15,7 +13,6 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@Component
-public @interface MyDao {
+public @interface MyRepository {
     String value() default "";
 }

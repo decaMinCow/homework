@@ -1,7 +1,7 @@
 package com.decamincow.myspring.dao.impl;
 
 import com.decamincow.myspring.annotation.MyAutowired;
-import com.decamincow.myspring.annotation.MyDao;
+import com.decamincow.myspring.annotation.MyRepository;
 import com.decamincow.myspring.dao.AccountDao;
 import com.decamincow.myspring.po.Account;
 import com.decamincow.myspring.utils.ConnectionUtils;
@@ -12,7 +12,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 @Data
-@MyDao
+@MyRepository
 public class AccountDaoImpl implements AccountDao {
 
     @MyAutowired
