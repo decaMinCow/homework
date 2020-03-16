@@ -5,7 +5,6 @@ import com.decamincow.sss.model.AdminUser;
 import com.decamincow.sss.model.po.Resume;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,8 +27,10 @@ public class MyRestController {
     private ResumeDao resumeDao;
 
     @PostMapping(value = "/user")
-    public void createUser() {
-        resumeDao.save(Resume.builder().address("address").name("name").phone("phone").build());
+    public void createUser(String name,
+                           String phone,
+                           String address) {
+        resumeDao.save(Resume.builder().address(address).name(name).phone(phone).build());
     }
 
 
@@ -39,8 +40,11 @@ public class MyRestController {
     }
 
     @PutMapping(value = "/user")
-    public void updateUser() {
-        resumeDao.save(Resume.builder().id(5L).address("address").name("name").phone("phone").build());
+    public void updateUser(String id,
+                           String name,
+                           String phone,
+                           String address) {
+        resumeDao.save(Resume.builder().id(Long.parseLong(id)).address(address).name(name).phone(phone).build());
     }
 
     @GetMapping(value = "/user")

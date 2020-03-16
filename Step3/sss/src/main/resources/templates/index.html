@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <style>a{text-decoration:none}</style>
-    <script th:src="@{/js/jquery-1.8.0.min.js}"></script>
+    <script th:src="@{/js/jquery-2.1.4.min.js}"></script>
 </head>
 <body>
 欢迎你 ：<input th:value="${adminuser.userName}" style="border: none; outline: none"/><br><br><br><br>
-<h2>人员信息维护</h2>
+<h2>人员信息维护<div style="float:right"><button><a href="/user/goadd/">添加</a></button></div></h2>
 <table width="888" border="1">
     <thead>
     <tr>
@@ -19,16 +19,15 @@
         <th>操作</th>
     </tr>
     <tr th:each="user:${alist}">
-        <td  align="center" th:text="${resume.id}"></td>
-        <td  align="center" th:text="${resume.name}"></td>
-        <td  align="center" th:text="${resume.address}"></td>
-        <td  align="center" th:text="${resume.phone}"></td>
-        <td  align="center"><a th:href="@{'/api/update/'+${resume.id}}">修改</a>
-            <a th:href="@{'/godel/'+${resume.id}}">删除</a>
+        <td  align="center" th:text="${user.id}"></td>
+        <td  align="center" th:text="${user.name}"></td>
+        <td  align="center" th:text="${user.address}"></td>
+        <td  align="center" th:text="${user.phone}"></td>
+        <td  align="center"><a th:href="@{'/user/goupdate/'+${user.id}}">编辑</a>
+            <a th:href="@{'/user/godelete/'+${user.id}}">删除</a>
         </td>
     </tr>
     </thead>
 </table>
-<button><a href="/goadd">添加</a></button>
 </body>
 </html>

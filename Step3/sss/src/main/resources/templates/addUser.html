@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>添加用户</title>
-    <script th:src="@{/js/jquery-1.8.0.min.js}"></script>
+    <script th:src="@{/js/jquery-2.1.4.min.js}"></script>
 </head>
 <body>
 <h2>我是添加页面</h2>
 
 请输入姓名：<input id="name"  name="name" type="text" /><br><br>
-请输入年龄：<input id="age"  name="age" type="text" /><br><br>
-请选择性别：<select id="sex" name="sex" style="width: 173px">
-    <option value="男">男</option>
-    <option value="女">女</option>
-</select><br><br>
+请输入电话：<input id="phone"  name="phone" type="text" /><br><br>
+请输入地址：<input id="address" name="address" type="text" /><br><br>
+
 <button  onclick="goadd()" name="sub" id="sub">添加</button>
 <button  name="button"  onclick="javascript:history.back(-1);">返回</button>
 </body>
 <script>
     function goadd() {
         var name = $("#name").val();
-        var age = $("#age").val();
-        var sex = $("#sex").val();
-        $.post("/addUser",{name:name,age:age,sex:sex},function (res) {
-            if (res==true){
-                alert("添加成功")
-                window.location.href ="/index";
-            }else {
-                alert("添加失败，请检查数据重试！");
+        var phone = $("#phone").val();
+        var address = $("#address").val();
+        $.ajax({
+            type: 'POST',
+            url: '/api/user',
+            data: {name:name,phone:phone,address:address},
+            success: function(data){
+                window.location.href="/user/index";
+            },
+            error: function(data){
+                alert("修改失败，请检查数据重试！");
             }
-        })
+        });
     }
 </script>
 </html>
