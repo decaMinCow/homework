@@ -3,9 +3,15 @@
     <Service>
         <Connector port="8080"/>
         <Engine>
-            <!--<Host name="localhost" appBase="/Users/decamincow/Dev/homework/Step5">-->
-                <!--<Context docBase="/Users/decamincow/Dev/homework/Minicat"></Context>-->
-            <!--</Host>-->
+            <Host name="localhost" appBase="/Users/webapps">
+                <Context docBase="/Users/webapps/demo1"></Context>
+                <Context docBase="/Users/webapps/demo2"></Context>
+            </Host>
+        </Engine>
+    </Service>
+    <Service>
+        <Connector port="8081"/>
+        <Engine>
             <Host name="localhost" appBase="/Users/webapps">
                 <Context docBase="/Users/webapps/demo1"></Context>
                 <Context docBase="/Users/webapps/demo2"></Context>

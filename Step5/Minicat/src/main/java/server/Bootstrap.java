@@ -5,6 +5,7 @@ import server.handle.Mapper;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.HashSet;
 import java.util.concurrent.*;
 
 import static server.handle.Mapper.servletMap;
@@ -15,7 +16,8 @@ import static server.handle.Mapper.servletMap;
 public class Bootstrap {
 
     /**定义socket监听的端口号*/
-    private int port = 8080;
+//    private int port = 8080;
+    HashSet<Integer> portSet = new HashSet<>();
 
     /**
      * Minicat启动需要初始化展开的一些操作
@@ -47,16 +49,35 @@ public class Bootstrap {
                 handler
         );
 
-        ServerSocket serverSocket = new ServerSocket(port);
-        System.out.println("=====>>>Minicat start on port：" + port);
+        servletMap.forEach((k,v)->{
+            int port = Integer.parseInt(k.substring(k.indexOf(":") + 1, k.indexOf("/")));
+            if(!portSet.contains(port)){
+                ServerSocket serverSocket = null;
+                try {
+                    serverSocket = new ServerSocket(port);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("=====>>>Minicat start on port：" + port);
 
-        while(true) {
+                ServerSocket finalServerSocket = serverSocket;
+                // TODO 先用不规范的方式实现，以后更新
+                new Thread(() -> {
+                    while(true) {
+                        Socket socket = null;
+                        try {
+                            socket = finalServerSocket.accept();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        RequestProcessor requestProcessor = new RequestProcessor(socket,servletMap);
+                        threadPoolExecutor.execute(requestProcessor);
+                    }
+                }).start();
 
-            Socket socket = serverSocket.accept();
-            RequestProcessor requestProcessor = new RequestProcessor(socket,servletMap);
-            //requestProcessor.start();
-            threadPoolExecutor.execute(requestProcessor);
-        }
+            }
+            portSet.add(port);
+        });
 
 
 
