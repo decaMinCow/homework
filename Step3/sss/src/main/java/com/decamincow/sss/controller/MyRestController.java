@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName MyController
@@ -25,6 +27,18 @@ public class MyRestController {
 
     @Autowired
     private ResumeDao resumeDao;
+
+    @GetMapping("/getSession")
+    public void getSession(HttpServletRequest request){
+        request.getSession().setAttribute("message",request.getQueryString());
+    }
+    @GetMapping("/setSession")
+    public Map<String,Object> setSession(HttpServletRequest request){
+        Map<String,Object> map = new HashMap<>();
+        map.put("sessionId",request.getSession().getId());
+        map.put("message",request.getSession().getAttribute("message"));
+        return map;
+    }
 
     @PostMapping(value = "/user")
     public void createUser(String name,
@@ -55,6 +69,7 @@ public class MyRestController {
     @PostMapping(value = "/gologin")
     public void gologin(HttpServletRequest request, HttpServletResponse response) throws IOException {
         HttpSession session = request.getSession();
+        System.out.println("session_id: " + session.getId());
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
         AdminUser admin = AdminUser.builder().userName(userName).password(password).build();

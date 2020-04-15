@@ -3,6 +3,8 @@ package com.decamincow.sss.model;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @ClassName AdminUser
  * @Description TODO
@@ -12,7 +14,7 @@ import lombok.Data;
  **/
 @Data
 @Builder
-public class AdminUser {
+public class AdminUser implements Serializable {
 
     private String userName;
 

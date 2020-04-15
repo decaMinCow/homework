@@ -52,6 +52,7 @@ public class MyController {
 
     @RequestMapping("/gologin")
     public String gologin(Model model, HttpServletRequest request) {
+        System.out.println("port: " + request.getServerPort());
         List<Resume> list = resumeDao.findAll();
         HttpSession session = request.getSession();
         AdminUser admin = (AdminUser)session.getAttribute("adminuser");
