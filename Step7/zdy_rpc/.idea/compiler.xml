@@ -9,12 +9,14 @@
         <module name="zdy_rpc_common" />
         <module name="zdy_rpc_consumer" />
         <module name="zdy_rpc_provider" />
+        <module name="zdy_rpc_register" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="zdy_rpc_common" target="1.5" />
       <module name="zdy_rpc_consumer" target="1.5" />
       <module name="zdy_rpc_provider" target="1.5" />
+      <module name="zdy_rpc_register" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

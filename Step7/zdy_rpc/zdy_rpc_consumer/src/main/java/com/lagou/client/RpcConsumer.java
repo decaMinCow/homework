@@ -26,6 +26,21 @@ public class RpcConsumer {
 
     private static UserClientHandler userClientHandler;
 
+    private String host;
+
+    private int port;
+
+    public RpcConsumer(String host, int port) {
+        this.host = host;
+        this.port = port;
+    }
+
+    public RpcConsumer(String host, int port, UserClientHandler userClientHandler) {
+        this.host = host;
+        this.port = port;
+        this.userClientHandler = userClientHandler;
+    }
+
     //1.创建一个代理对象 providerName：UserService#sayHello are you ok?
     public Object createProxy(final Class<?> serviceClass){
         //借助JDK动态代理生成代理对象
@@ -34,7 +49,7 @@ public class RpcConsumer {
                 //（1）调用初始化netty客户端的方法
 
                 if(userClientHandler == null){
-                 initClient();
+                    initClient(host, port);
                 }
 
                 // 设置参数
@@ -48,8 +63,8 @@ public class RpcConsumer {
                         .build());
 
                 // 去服务端请求数据
-
-                return executor.submit(userClientHandler).get();
+                Object result = executor.submit(userClientHandler).get();
+                return result;
             }
         });
 
@@ -57,8 +72,8 @@ public class RpcConsumer {
     }
 
     //2.初始化netty客户端
-    public static  void initClient() throws InterruptedException {
-         userClientHandler = new UserClientHandler();
+    public static  void initClient(String host, int port) throws InterruptedException {
+        userClientHandler = new UserClientHandler();
 
         EventLoopGroup group = new NioEventLoopGroup();
 
@@ -75,7 +90,7 @@ public class RpcConsumer {
                     }
                 });
 
-        bootstrap.connect("127.0.0.1",8990).sync();
+        bootstrap.connect(host,port).sync();
 
     }
 
