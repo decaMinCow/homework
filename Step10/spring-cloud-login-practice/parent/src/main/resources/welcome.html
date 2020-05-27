@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script>
+        function getQueryValue1(queryName) {
+            var reg = new RegExp("(^|&)" + queryName + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if ( r != null ){
+                return decodeURI(r[2]);
+            }else{
+                return null;
+            }
+        }
+
+        $(function () {
+            console.log(getQueryValue1('email'));
+            $("#user").html(getQueryValue1('email') + "，欢迎登录系统");
+        })
+
+
+    </script>
+</head>
+<body>
+<div id="user">
+</div>
+</body>
+</html>

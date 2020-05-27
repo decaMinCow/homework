@@ -3,12 +3,12 @@
 -- ----------------------------
 DROP TABLE IF EXISTS `auth_code`;
 CREATE TABLE `auth_code` (
- `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '⾃增主键',
+--  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '⾃增主键',
  `email` varchar(64) DEFAULT NULL COMMENT '邮箱地址',
  `code` varchar(6) DEFAULT NULL COMMENT '验证码',
  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
  `expiretime` datetime DEFAULT NULL COMMENT '过期时间',
- PRIMARY KEY (`id`)
+ PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 SET FOREIGN_KEY_CHECKS = 1;
 

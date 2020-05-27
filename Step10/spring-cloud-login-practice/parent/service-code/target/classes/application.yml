@@ -27,3 +27,9 @@ eureka:
     lease-renewal-interval-in-seconds: 30
     # 租约到期，服务时效时间，默认值90秒,服务超过90秒没有发生心跳，EurekaServer会将服务从列表移除
     lease-expiration-duration-in-seconds: 90
+
+ribbon:
+  # 连接超时
+  ConnectTimeout: 2000
+  # 响应超时
+  ReadTimeout: 5000

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#signinBtn").bind("click", function(){
+                $.ajax({
+                    type: "GET",
+                    url: 'http://www.decamincow.com/api/user/login/' + $('#email').val() + "/" + $('#password').val(),
+                    success: function(result) {
+                        if($('#email').val() == result){
+                            window.location.href = "http://www.decamincow.com/static/welcome.html?email=" + $('#email').val();
+                        }
+                        console.log(result)}
+                })
+            });
+        })
+
+        $(function () {
+            $("#signupBtn").bind("click", function(){
+                window.location.href = "http://www.decamincow.com/static/register.html";
+            });
+        })
+
+    </script>
+</head>
+<body>
+<div>
+    <table>
+        <tr><td>邮箱</td><td><input id="email" name="email"></td></tr>
+        <tr><td>密码</td><td><input id="password" name="password" type="password"></td></tr>
+        <tr><td><button id="signinBtn" type="button">登陆</button></td></tr>
+        <tr><td><button id="signupBtn" type="button">注册</button></td></tr>
+    </table>
+</div>
+</body>
+</html>

@@ -4,6 +4,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.Tolerate;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -25,12 +27,10 @@ public class AuthCode {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // 主键
     private String email; // 邮箱
     private String code; // 验证码
     @Temporal(TemporalType.TIMESTAMP)
-    @CreationTimestamp
+    @UpdateTimestamp
     private Date createTime; // 创建时间
     private Date expireTime; // 过期时间
 }

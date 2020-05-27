@@ -10,6 +10,12 @@ import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.TransactionAspectSupport;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @ClassName UserServiceImpl
@@ -42,7 +48,17 @@ public class UserServiceImpl implements UserService {
             return null;
         }
 
-        return userDao.save(UserInfo.builder().email(email).password(password).build());
+        UserInfo result = userDao.save(UserInfo.builder().email(email).password(password).build());
+
+        /**
+         * cookie 种入 token
+         */
+        Cookie cookie = new Cookie("token", TokenGen.genSign(email + password));
+        cookie.setPath("/");
+        cookie.setMaxAge(3600);
+        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        servletRequestAttributes.getResponse().addCookie(cookie);
+        return result;
     }
 
     @Override
@@ -70,6 +86,15 @@ public class UserServiceImpl implements UserService {
             String token = TokenGen.genSign(email + password);
             userInfo.setToken(token);
             userDao.save(userInfo);
+
+            /**
+             * cookie 种入 token
+             */
+            Cookie cookie = new Cookie("token", TokenGen.genSign(email + password));
+            cookie.setPath("/");
+            cookie.setMaxAge(3600);
+            ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+            servletRequestAttributes.getResponse().addCookie(cookie);
         } catch (Exception e) {
             TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
             return "";

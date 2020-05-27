@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#getCodeBtn").bind("click", function(){
+                $.ajax({
+                    type: "GET",
+                    url: 'http://www.decamincow.com/api/code/create/' + $('#email').val(),
+                    success: function(result) {
+                        if(true == result){
+                            alert("验证码已发送");
+                        }
+                        console.log(result)}
+                })
+            });
+        })
+
+        $(function () {
+            $("#signupBtn").bind("click", function(){
+                $.ajax({
+                    type: "GET",
+                    url: 'http://www.decamincow.com/api/user/register/' + $('#email').val() + "/" + $('#password').val() + "/"+ $('#code').val() ,
+                    success: function(result) {
+                        if(true == result){
+                            alert("注册成功，请登录");
+                        }
+                        console.log(result)}
+                })
+            });
+        })
+
+    </script>
+</head>
+<body>
+<div>
+    <table>
+        <tr><td>邮箱</td><td><input id="email" name="email"></td></tr>
+        <tr><td>密码</td><td><input id="password" name="password" type="password"></td></tr>
+        <tr><td>验证码</td><td><input id="code"></td><td><button id="getCodeBtn" type="button">获取验证码</button></td></tr>
+        <tr><td><button id="signupBtn" type="button">注册</button></td></tr>
+    </table>
+</div>
+</body>
+</html>

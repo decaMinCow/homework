@@ -21,11 +21,12 @@ spring:
     config:
       server:
         git:
+          skipSslValidation: true
           uri: https://github.com/decaMinCow/homework.git #配置git服务地址
-          username: piaozhefeng1@126.com #配置git⽤户名
-          password: sdjfos #配置git密码
+          username: adfjaof@126.com #配置git⽤户名
+          password: xxxxx #配置git密码
           search-paths:
-            - homework/Step10
+            - decaMinCow/homework
       # 读取分⽀
       label: master
 management:
