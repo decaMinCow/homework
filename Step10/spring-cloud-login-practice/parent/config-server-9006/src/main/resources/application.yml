@@ -1,24 +1,5 @@
 server:
-  port: 8082
-spring:
-  application:
-    name: email
-  datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=yes&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Hongkong
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    database: MySQL
-    show-sql: true
-    hibernate:
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #避免将驼峰 命名转换为下划线命名
-  mail:
-    host: smtp.126.com
-    username: piaozhefeng1@126.com
-    password: sdjfoia
-    default-encoding: UTF-8
+  port: 9006
 
 eureka:
   client:
@@ -32,3 +13,27 @@ eureka:
     lease-renewal-interval-in-seconds: 30
     # 租约到期，服务时效时间，默认值90秒,服务超过90秒没有发生心跳，EurekaServer会将服务从列表移除
     lease-expiration-duration-in-seconds: 90
+
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/decaMinCow/homework.git #配置git服务地址
+          username: piaozhefeng1@126.com #配置git⽤户名
+          password: sdjfos #配置git密码
+          search-paths:
+            - homework/Step10
+      # 读取分⽀
+      label: master
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  # 暴露健康接⼝的细节
+  endpoint:
+    health:
+      show-details: always

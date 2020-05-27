@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4529ff1-6dc4-4f37-a781-0780e5d74f33" name="Default Changelist" comment="" />
+    <list default="true" id="e4529ff1-6dc4-4f37-a781-0780e5d74f33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/config-server-9006/config-server-9006.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/config-server-9006/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/config-server-9006/src/main/java/com/decamincow/practice/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/config-server-9006/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/parent/common/target/" />
@@ -620,7 +631,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590578185475" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590579907943" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />

@@ -15,6 +15,7 @@
         <module>service-code</module>
         <module>service-email</module>
         <module>domain</module>
+        <module>config-server-9006</module>
     </modules>
 
     <packaging>pom</packaging>
