@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4529ff1-6dc4-4f37-a781-0780e5d74f33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/parent/autodeliver-8090/autodeliver-8090.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/autodeliver-8090/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/resume-8080/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/resume-8080/resume-8080.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/common/src/main/java/com/decamincow/practice/util/TokenGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/common/target/classes/com/decamincow/learning/springcloud/model/Resume.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/db/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/domain/src/main/java/com/decamincow/practice/model/AuthCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/domain/src/main/java/com/decamincow/practice/model/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8761/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8761/src/main/java/com/decamincow/practice/EurekaServerApp8761.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8761/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8761/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8762/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8762/src/main/java/com/decamincow/practice/EurekaServerApp8762.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8762/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8762/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8762/target/classes/com/decamincow/learning/springcloud/EurekaServerApp8761.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/eureka-8762/target/classes/com/decamincow/learning/springcloud/EurekaServerApp8762.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/gateway-9002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/gateway-9002/src/main/java/com/decamincow/practice/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/gateway-9002/src/main/java/com/decamincow/practice/filter/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/gateway-9002/src/main/java/com/decamincow/practice/filter/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/gateway-9002/src/main/java/com/decamincow/practice/filter/config/HostAddrKeyResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/gateway-9002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/src/main/java/com/decamincow/practice/CodeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/src/main/java/com/decamincow/practice/controller/CodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/src/main/java/com/decamincow/practice/controller/service/EmailServiceFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/src/main/java/com/decamincow/practice/dao/CodeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/src/main/java/com/decamincow/practice/service/CodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/src/main/java/com/decamincow/practice/service/impl/CodeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-code/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/java/com/decamincow/practice/EmailApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/java/com/decamincow/practice/controller/EmailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/java/com/decamincow/practice/manager/EmailManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/java/com/decamincow/practice/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/java/com/decamincow/practice/service/impl/EmailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-email/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/src/main/java/com/decamincow/practice/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/src/main/java/com/decamincow/practice/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/src/main/java/com/decamincow/practice/controller/service/CodeServiceFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/src/main/java/com/decamincow/practice/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/src/main/java/com/decamincow/practice/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/src/main/java/com/decamincow/practice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-login-practice/parent/service-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Step2/MySpring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Step2/MySpring/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Step9/transport_ip_filter_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Step9/transport_ip_filter_demo/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e4529ff1-6dc4-4f37-a781-0780e5d74f33" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/parent/common/target/" />
@@ -681,7 +620,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590577859423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590578185475" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />

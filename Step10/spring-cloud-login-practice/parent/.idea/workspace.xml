@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9ce3ff9-1506-44be-809d-1fb9c0fcb030" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8090/autodeliver-8090.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8090/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/resume-8080/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/resume-8080/resume-8080.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/decamincow/practice/util/TokenGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/decamincow/learning/springcloud/model/Resume.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/decamincow/practice/model/AuthCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/decamincow/practice/model/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8761/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8761/src/main/java/com/decamincow/practice/EurekaServerApp8761.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8761/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8761/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8762/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8762/src/main/java/com/decamincow/practice/EurekaServerApp8762.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8762/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8762/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8762/target/classes/com/decamincow/learning/springcloud/EurekaServerApp8761.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-8762/target/classes/com/decamincow/learning/springcloud/EurekaServerApp8762.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-9002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/config/HostAddrKeyResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-9002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/CodeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/controller/CodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/controller/service/EmailServiceFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/dao/CodeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/service/CodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/service/impl/CodeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-code/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/com/decamincow/practice/EmailApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/com/decamincow/practice/controller/EmailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/com/decamincow/practice/manager/EmailManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/com/decamincow/practice/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/com/decamincow/practice/service/impl/EmailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/controller/service/CodeServiceFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Step2/MySpring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Step2/MySpring/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Step9/transport_ip_filter_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Step9/transport_ip_filter_demo/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e9ce3ff9-1506-44be-809d-1fb9c0fcb030" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-8761/target/" />
@@ -95,7 +34,7 @@
           <entry key="java" value="94" />
           <entry key="sql" value="6" />
           <entry key="xml" value="26" />
-          <entry key="yml" value="11" />
+          <entry key="yml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -104,7 +43,7 @@
           <entry key="JAVA" value="94" />
           <entry key="SQL" value="6" />
           <entry key="XML" value="26" />
-          <entry key="YAML" value="11" />
+          <entry key="YAML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -158,13 +97,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/gateway-9002/src/main/resources/application.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
+                <state relative-caret-position="22">
                   <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/service-user/src/main/resources/application.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="9" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/service/impl/CodeServiceImpl.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="114">
@@ -611,7 +559,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590577859445" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590578185505" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -739,12 +687,12 @@
       <option name="presentableId" value="Default" />
       <updated>1590542046313</updated>
       <workItem from="1590542047517" duration="473000" />
-      <workItem from="1590542546633" duration="29541000" />
+      <workItem from="1590542546633" duration="29870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30014000" />
+    <option name="totallyTimeSpent" value="30343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
@@ -912,13 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="165" selection-start-line="6" selection-start-column="141" selection-end-line="6" selection-end-column="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-user/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="165" selection-start-line="6" selection-start-column="165" selection-end-line="6" selection-end-column="165" />
         </state>
       </provider>
     </entry>
@@ -1197,13 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-9002/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-code/src/main/java/com/decamincow/practice/service/impl/CodeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1211,6 +1145,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-9002/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-user/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="9" selection-end-column="47" />
         </state>
       </provider>
     </entry>
