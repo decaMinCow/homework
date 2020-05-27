@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="autodeliver-8090" />
+        <module name="autodeliver-8091" />
+        <module name="cloud-gateway-9002" />
+        <module name="common" />
+        <module name="eureka-8761" />
+        <module name="eureka-8762" />
+        <module name="resume-8080" />
+        <module name="resume-8081" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="autodeliver-8090" target="11" />
+      <module name="autodeliver-8091" target="11" />
+      <module name="cloud-gateway-9002" target="11" />
+      <module name="common" target="11" />
+      <module name="domain" target="11" />
+      <module name="eureka-8761" target="11" />
+      <module name="eureka-8762" target="11" />
+      <module name="parent" target="11" />
+      <module name="resume-8080" target="11" />
+      <module name="resume-8081" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: autodeliver
+
+eureka:
+  client:
+    serviceUrl: # eureka server的路径
+      defaultZone: http://EurekaServerA:8761/eureka/,http://EurekaServerB:8762/eureka/ #把 eureka 集群中的所有 url 都填写了进来，也可以只写一台，因为各个 eureka server 可以同步注册表
+    # 每隔多久拉取一次服务列表
+    registry-fetch-interval-seconds: 30
+  instance:
+    #使用ip注册，否则会使用主机名注册了(此处考虑到对老版本的兼容，新版本经过实验都是ip)
+    prefer-ip-address: true #自定义实例显示格式，加上版本号，便于多版本管理，注意是ip-address，早期版本是ipAddress
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:1.0-SNAPSHOT
+
+# 根据 application name 修改负载均衡策略，如果全部生效则去掉 resume 便可
+resume:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #负载策略调整

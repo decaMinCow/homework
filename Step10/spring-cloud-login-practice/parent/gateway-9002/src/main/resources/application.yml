@@ -1,0 +1,60 @@
+server:
+  port: 9002
+
+eureka:
+  client:
+    serviceUrl: # eureka server的路径
+      defaultZone: http://EurekaServerA:8761/eureka/,http://EurekaServerB:8762/eureka/ #把 eureka 集群中的所有 url 都填写了进来，也可以只写一台，因为各个 eureka server 可以同步注册表
+    # 每隔多久拉取一次服务列表
+    registry-fetch-interval-seconds: 30
+  instance:
+    #使用ip注册，否则会使用主机名注册了(此处考虑到对老版本的兼容，新版本经过实验都是ip)
+    prefer-ip-address: true #自定义实例显示格式，加上版本号，便于多版本管理，注意是ip-address，早期版本是ipAddress
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: service-user-register-limit-router
+          uri: lb://user
+          predicates:
+          - Path=/api/user/register/**
+          filters:
+          - PrefixPath=/api
+          - StripPrefix=2
+          - name: RequestRateLimiter
+            args:
+              key-resolver: '#{@ipKeyResolver}'
+              redis-rate-limiter.replenishRate: 1
+              redis-rate-limiter.burstCapacity: 1
+        - id: service-user-router
+          uri: lb://user
+          predicates:
+          - Path=/api/user/**
+          filters:
+          - PrefixPath=/api
+          - StripPrefix=2
+        - id: service-code-router
+          uri: lb://code
+          predicates:
+          - Path=/api/code/**
+          filters:
+          - PrefixPath=/api
+          - StripPrefix=2
+        - id: service-email-router
+          uri: lb://email
+          predicates:
+          - Path=/api/email/**
+          filters:
+          - PrefixPath=/api
+          - StripPrefix=2
+
+management.endpoint.gateway.enabled: true
+management.endpoints.web.exposure.include: gateway
