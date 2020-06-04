@@ -9,6 +9,13 @@ spring:
   application:
     name: cloud-gateway
   cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080 # sentinel dashboard/console 地址
+        port: 8719 # sentinel会在该端口启动http server，那么这样的话，控制台定 义的一些限流等规则才能发送传递过来，
     gateway:
       routes:
         - id: service-user-register-limit-router
@@ -50,9 +57,6 @@ spring:
           lowerCaseServiceId: true   #是将请求路径上的服务名配置为小写（因为服务注册的时候，向注册中心注册时将服务名转成大写的了），比如以/service-hi/*的请求路径被路由转发到服务名为service-hi的服务上。
           filters:
           - StripPrefix=1
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
 
 management.endpoint.gateway.enabled: true
 management.endpoints.web.exposure.include: gateway

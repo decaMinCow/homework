@@ -34,22 +34,22 @@ public class CheckTokenFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain
             chain) {
-        ServerHttpRequest request = exchange.getRequest();
-        ServerHttpResponse response = exchange.getResponse();
-        System.out.println(request.getPath().contextPath().value());
-        boolean authorized = true;
-        if(request.getPath().contextPath().value() != "user" && request.getPath().contextPath().value() != "code" && request.getPath().contextPath().value() != "email") {
-            List<HttpCookie> tokens = request.getCookies().get("token");
-            tokens.stream().forEach(token -> {
-                // TODO 这里判断 token 赋值 authorized
-            });
-        }
-        if(!authorized){
-            response.setStatusCode(HttpStatus.UNAUTHORIZED); // 状态码
-            String data = "Request be denied!";
-            DataBuffer wrap = response.bufferFactory().wrap(data.getBytes());
-            return response.writeWith(Mono.just(wrap));
-        }
+//        ServerHttpRequest request = exchange.getRequest();
+//        ServerHttpResponse response = exchange.getResponse();
+//        System.out.println(request.getPath().contextPath().value());
+//        boolean authorized = true;
+//        if(request.getPath().contextPath().value() != "user" && request.getPath().contextPath().value() != "code" && request.getPath().contextPath().value() != "email") {
+//            List<HttpCookie> tokens = request.getCookies().get("token");
+//            tokens.stream().forEach(token -> {
+//                // TODO 这里判断 token 赋值 authorized
+//            });
+//        }
+//        if(!authorized){
+//            response.setStatusCode(HttpStatus.UNAUTHORIZED); // 状态码
+//            String data = "Request be denied!";
+//            DataBuffer wrap = response.bufferFactory().wrap(data.getBytes());
+//            return response.writeWith(Mono.just(wrap));
+//        }
         return chain.filter(exchange);
     }
     /**
