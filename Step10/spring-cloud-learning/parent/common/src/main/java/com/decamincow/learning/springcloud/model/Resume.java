@@ -7,6 +7,7 @@ import lombok.experimental.Tolerate;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * @ClassName Resume
@@ -19,7 +20,7 @@ import javax.persistence.Table;
 @Builder
 @Entity
 @Table(name="r_resume")
-public class Resume {
+public class Resume implements Serializable {
 
     @Tolerate
     public Resume() {

@@ -11,11 +11,17 @@
         <module>common</module>
         <module>resume-8080</module>
         <module>resume-8081</module>
+        <module>resume-8082-nacos</module>
+        <module>resume-8083-nacos-sentinel-dubbo</module>
         <module>autodeliver-8090</module>
         <module>autodeliver-8091</module>
+        <module>autodeliver-8092-nacos</module>
+        <module>autodeliver-8093-sentinel</module>
+        <module>autodeliver-8094-nacos-sentinel-dubbo</module>
         <module>eureka-8761</module>
         <module>eureka-8762</module>
         <module>cloud-gateway-9002</module>
+        <module>dubbo-api</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -57,11 +63,12 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--热部署-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
+        <!--先注释掉影响整合 nacos dubbo sentinel-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
 
         <!--引入Jaxb，开始-->
         <dependency>
@@ -99,6 +106,15 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--SCA -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.1.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

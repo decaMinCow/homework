@@ -17,7 +17,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class AutodeliverApplcation8091 {
     public static void main(String[] args) {
-        SpringApplication.run(AutodeliverApplcation8091.class, args);
+        SpringApplication.run(AutodeliverApplcation8092.class, args);
     }
 
 }

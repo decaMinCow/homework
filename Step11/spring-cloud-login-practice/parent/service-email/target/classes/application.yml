@@ -1,0 +1,34 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: email
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=yes&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Hongkong
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #避免将驼峰 命名转换为下划线命名
+  mail:
+    host: smtp.126.com
+    username: piaozhefeng1@126.com
+    password: XBFBWYUIIPIQUYCM
+    default-encoding: UTF-8
+
+eureka:
+  client:
+    serviceUrl: # eureka server的路径
+      defaultZone: http://EurekaServerA:8761/eureka/,http://EurekaServerB:8762/eureka/ #把 eureka 集群中的所有 url 都填写了进来，也可以只写一台，因为各个 eureka server 可以同步注册表
+  instance:
+    #使用ip注册，否则会使用主机名注册了(此处考虑到对老版本的兼容，新版本经过实验都是ip)
+    prefer-ip-address: true #自定义实例显示格式，加上版本号，便于多版本管理，注意是ip-address，早期版本是ipAddress
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:1.0-SNAPSHOT
+    # 租约续约间隔时间，默认30秒
+    lease-renewal-interval-in-seconds: 30
+    # 租约到期，服务时效时间，默认值90秒,服务超过90秒没有发生心跳，EurekaServer会将服务从列表移除
+    lease-expiration-duration-in-seconds: 90

@@ -2,34 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ce3ff9-1506-44be-809d-1fb9c0fcb030" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/exception/ExceptionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/exception/JsonExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/js/jquery-2.1.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/录屏.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8090/autodeliver-8090.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8090/autodeliver-8090.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8091/autodeliver-8091.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8091/autodeliver-8091.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8091/src/main/java/com/decamincow/learning/springcloud/AutodeliverApplcation8091.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/autodeliver-8091/src/main/java/com/decamincow/learning/springcloud/AutodeliverApplcation8091.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/src/main/java/com/decamincow/learning/springcloud/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/src/main/java/com/decamincow/learning/springcloud/model/Resume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/target/classes/com/decamincow/learning/springcloud/model/Resume$ResumeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/target/classes/com/decamincow/learning/springcloud/model/Resume$ResumeBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/target/classes/com/decamincow/learning/springcloud/model/Resume.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/common/target/classes/com/decamincow/learning/springcloud/model/Resume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/eureka-8761/eureka-8761.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/eureka-8761/eureka-8761.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/eureka-8762/eureka-8762.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/eureka-8762/eureka-8762.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/resume-8080/resume-8080.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/resume-8080/resume-8080.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-cloud-learning/parent/resume-8081/resume-8081.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-cloud-learning/parent/resume-8081/resume-8081.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-9006/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-9006/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-9006/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/decamincow/practice/model/AuthCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/decamincow/practice/model/AuthCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/com/decamincow/practice/model/AuthCode$AuthCodeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/com/decamincow/practice/model/AuthCode$AuthCodeBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/com/decamincow/practice/model/AuthCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/com/decamincow/practice/model/AuthCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/CheckTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/config/HostAddrKeyResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-9002/target/classes/com/decamincow/practice/filter/Filter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-code/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-code/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-code/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-code/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-code/target/classes/com/decamincow/practice/service/impl/CodeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-code/target/classes/com/decamincow/practice/service/impl/CodeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-email/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Step5/Minicat/target/classes/server/data/appendonly.aof" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Step5/Minicat/target/classes/server/data/appendonly.aof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/录屏.mp4" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,7 +45,7 @@
     <session id="-1364593194">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.opened" value="2" />
         </counts>
@@ -87,7 +79,7 @@
           <entry key="java" value="4100" />
           <entry key="sql" value="67" />
           <entry key="xml" value="85" />
-          <entry key="yml" value="385" />
+          <entry key="yml" value="396" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -97,7 +89,7 @@
           <entry key="PLAIN_TEXT" value="32" />
           <entry key="SQL" value="67" />
           <entry key="XML" value="85" />
-          <entry key="YAML" value="385" />
+          <entry key="YAML" value="396" />
         </counts>
       </usages-collector>
     </session>
@@ -142,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service-email/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="284">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -266,7 +258,6 @@
         <option value="$PROJECT_DIR$/gateway-9002/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/config-server-9006/pom.xml" />
         <option value="$PROJECT_DIR$/config-server-9006/src/main/java/com/decamincow/practice/ConfigServerApplication.java" />
-        <option value="$PROJECT_DIR$/service-email/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/config-server-9006/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/service-user/pom.xml" />
         <option value="$PROJECT_DIR$/config-server-9006/src/main/resources/application.yml" />
@@ -285,6 +276,7 @@
         <option value="$PROJECT_DIR$/service-user/src/main/java/com/decamincow/practice/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/TokenFilter.java" />
         <option value="$PROJECT_DIR$/gateway-9002/src/main/java/com/decamincow/practice/filter/CheckTokenFilter.java" />
+        <option value="$PROJECT_DIR$/service-email/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -319,32 +311,6 @@
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="parent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="service-email" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="service-email" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="service-email" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="service-email" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -360,7 +326,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590602887479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591271180223" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -503,16 +469,15 @@
       <option name="presentableId" value="Default" />
       <updated>1590542046313</updated>
       <workItem from="1590542047517" duration="473000" />
-      <workItem from="1590542546633" duration="46614000" />
+      <workItem from="1590542546633" duration="53411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47087000" />
+    <option name="totallyTimeSpent" value="53884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26251787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -536,7 +501,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.49928468" weight="0.43184885" />
+      <window_info anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.49928468" visible="true" weight="0.43184885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1002,8 +967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-email/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="284">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>

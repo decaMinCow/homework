@@ -1,0 +1,31 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: resume
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=yes&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #避免将驼峰 命名转换为下划线命名
+  # nacos 配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: e737b3b9-d52d-43b9-ac30-3fa84ed960bd
+        group: DEFAULT_GROUP
+        file-extension: yaml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

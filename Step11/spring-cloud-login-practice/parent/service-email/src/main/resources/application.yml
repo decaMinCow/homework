@@ -1,0 +1,51 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: email
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=yes&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Hongkong
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #避免将驼峰 命名转换为下划线命名
+  mail:
+    host: smtp.126.com
+    username: sdfsadf@126.com
+    password: xxxx
+    default-encoding: UTF-8
+  # nacos 配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: e737b3b9-d52d-43b9-ac30-3fa84ed960bd
+        group: DEFAULT_GROUP
+        file-extension: yaml
+  main:
+    allow-bean-definition-overriding: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+dubbo:
+  scan:
+    # dubbo 服务扫描基准包
+    base-packages: com.decamincow.practice.service.impl
+  protocol:
+    # dubbo 协议
+    name: dubbo
+    # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
+    port: -1
+    host: 127.0.0.1
+  registry:
+    # 挂载到 Spring Cloud 的注册中心
+    address: spring-cloud://localhost

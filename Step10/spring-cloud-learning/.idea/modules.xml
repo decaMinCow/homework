@@ -4,13 +4,19 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/parent/autodeliver-8090/autodeliver-8090.iml" filepath="$PROJECT_DIR$/parent/autodeliver-8090/autodeliver-8090.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/autodeliver-8091/autodeliver-8091.iml" filepath="$PROJECT_DIR$/parent/autodeliver-8091/autodeliver-8091.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/autodeliver-8092-nacos/autodeliver-8092-nacos.iml" filepath="$PROJECT_DIR$/parent/autodeliver-8092-nacos/autodeliver-8092-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/autodeliver-8093-sentinel/autodeliver-8093-sentinel.iml" filepath="$PROJECT_DIR$/parent/autodeliver-8093-sentinel/autodeliver-8093-sentinel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/autodeliver-8094-nacos-sentinel-dubbo/autodeliver-8094-nacos-sentinel-dubbo.iml" filepath="$PROJECT_DIR$/parent/autodeliver-8094-nacos-sentinel-dubbo/autodeliver-8094-nacos-sentinel-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/cloud-gateway-9002/cloud-gateway-9002.iml" filepath="$PROJECT_DIR$/parent/cloud-gateway-9002/cloud-gateway-9002.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/common/common.iml" filepath="$PROJECT_DIR$/parent/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/dubbo-api/dubbo-api.iml" filepath="$PROJECT_DIR$/parent/dubbo-api/dubbo-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/eureka-8761/eureka-8761.iml" filepath="$PROJECT_DIR$/parent/eureka-8761/eureka-8761.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/eureka-8762/eureka-8762.iml" filepath="$PROJECT_DIR$/parent/eureka-8762/eureka-8762.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/resume-8080/resume-8080.iml" filepath="$PROJECT_DIR$/parent/resume-8080/resume-8080.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/resume-8081/resume-8081.iml" filepath="$PROJECT_DIR$/parent/resume-8081/resume-8081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/resume-8082-nacos/resume-8082-nacos.iml" filepath="$PROJECT_DIR$/parent/resume-8082-nacos/resume-8082-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/resume-8083-nacos-sentinel-dubbo/resume-8083-nacos-sentinel-dubbo.iml" filepath="$PROJECT_DIR$/parent/resume-8083-nacos-sentinel-dubbo/resume-8083-nacos-sentinel-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-learning.iml" filepath="$PROJECT_DIR$/spring-cloud-learning.iml" />
     </modules>
   </component>
