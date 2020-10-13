@@ -13,7 +13,7 @@
         <mysql.version>5.1.18</mysql.version>
         <c3p0.version>0.9.1.2</c3p0.version>
         <log4j.version>1.2.12</log4j.version>
-        <junit.version>4.10</junit.version>
+        <junit.version>4.13.1</junit.version>
         <dom4j.version>1.6.1</dom4j.version>
         <jaxen.version>1.1.6</jaxen.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
